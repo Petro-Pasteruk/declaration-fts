@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "RussoOne";
+  src: url("../fonts/RussoOne-Regular.ttf") format("truetype");
+}
+
+.container {
+	margin-bottom: 5rem;
+}
+
+.menu {
+	border-bottom: gray 1px solid;
+}
+
+.logo {
+  font-family: "RussoOne";
+  font-size: 1.2rem;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar-toggler {
+	padding: 0px;
+	font-size: 1.5rem;
+	border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,186,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.logo span {
+  color: #00bbff;
+  font-size: 1rem;
+  display: inline-block;
+  position: absolute;
+  bottom: -0.1rem;
+}
+
+.nav-link {
+  color: #000000 !important;
+  font-size: 0.9rem;
+}
+
+.btn {
+	border-radius: 2rem;
+}
+
+.main {
+	background-image: url("../img/main-bg.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.descriptor {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.offer {
+	font-size: 1.2rem;
+}
+
+.form-service h6 {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.form-service input {
+	border-radius: 2rem;
+	z-index: 10;
+}
+
+.form-service button {
+	margin-left: -1rem;
+	z-index: 20;
+	padding: .375rem 1.75rem;
+}
+
+.black-label {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.75) !important;
+	color: white;
+	border-radius: 2rem;
+	vertical-align: middle;
+	z-index: 12;
+	position: relative;
+}
+
+.black-label p, .black-label button {
+	padding: .375rem 1.75rem;
+	margin: 0px;
+	z-index: 12;
+	position: relative;
+}
+
+.other-services {
+	position: relative;
+	margin-top: -1rem;
+	z-index: 11;
+	background-color: white;
+	border-radius: 2rem;
+	overflow: auto;
+}
+
+.other-services ul {
+	position: relative;
+	z-index: 11;
+	list-style-type: none;
+	margin: 0px;
+	padding: 3rem 2rem 0.5rem;
+}
+
+.other-services ul li {
+	padding: 0.5rem 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.other-services i {
+	color: #00bbff;
+}
+
+.other-services button {
+	margin: 0rem auto 1rem;
+	display: block;
+}
+
+.timer {
+	background-color: white;
+	overflow: auto;
+	padding: 1rem;
+	margin: 3rem 0rem;
+	border-radius: 5rem;
+}
+
+.timer h5 {
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.timer .counters {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.timer .counter {
+	font-size: 1.5rem;
+	width: 4.5rem;
+	height: 4.5rem;
+	text-align: center;
+	vertical-align: middle;
+	border: #00bbff 1px solid;
+	border-radius: 100%;
+	display: table-cell;
+	color: #00bbff;
+}
+
+.timer .desc {
+	text-align: center;
+	color: #00bbff;
+}
