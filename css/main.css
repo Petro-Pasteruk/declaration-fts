@@ -3,6 +3,11 @@
   src: url("../fonts/RussoOne-Regular.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "SegoeUI";
+	src: url("../fonts/SegoeUI.ttf") format("truetype");
+}
+
 .container {
 	margin-bottom: 5rem;
 }
@@ -164,4 +169,83 @@
 .timer .desc {
 	text-align: center;
 	color: #00bbff;
+}
+
+.advantages > div {
+	display: flex;
+}
+
+.advantages__img {
+	margin-right: 20px;
+	background: #e5f8ff;
+	border-radius: 30px;
+}
+
+.advantages__img > img {}
+
+.advantages__title {
+	margin-bottom: 15px;
+	font-family: "SegoeUI", sans-serif;
+	font-size: 24px;
+	color: #00baff;
+}
+
+.advantages__desc {
+	font-size: 14px;
+}
+
+.footer {
+	background: #e8e8e8;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.footer .container {
+	margin-bottom: 0;
+}
+
+.footer__copyright {
+	font-size: 14px;
+	color: #636363;
+}
+
+.footer__email {
+	color: #323232;
+	font-size: 14px;
+	font-family: "SegoeUI", sans-serif;
+}
+
+.footer__email a {
+	font-size: 14px;
+	font-family: "SegoeUI", sans-serif;
+	color: #2ac2fb;
+	text-decoration: underline;
+}
+
+.footer__links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80px;
+	padding: 0;
+	margin: 0;
+}
+
+.footer__link {
+	cursor: pointer;
+	opacity: .5;
+	transition: all .3s;
+}
+
+.footer__link:hover {
+	opacity: 1;
+}
+
+.footer__contract a {
+	color: #323232;
+	font-size: 14px;
+	font-family: "SegoeUI", sans-serif;
+	text-decoration: underline;
 }
