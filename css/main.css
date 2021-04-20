@@ -249,3 +249,70 @@
 	font-family: "SegoeUI", sans-serif;
 	text-decoration: underline;
 }
+.adaptiveVisible {
+	display: none;
+}
+
+.avt {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.avt__item {
+	width: 100%;
+	background: #e8e8e8;
+	border-radius: 20px;
+	display: flex;
+	height: 150px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 45px;
+}
+.avt__item > div:nth-of-type(2) {
+	width: 60%;
+}
+@media (max-width: 1030px){
+	.advantages {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 991px) {
+	.container {
+		max-width: 980px !important;
+	}
+}
+@media (max-width: 860px) {
+	.advantages > .col-sm-3 {
+		flex: 0 0 45%;
+		max-width: 45%;
+		margin-bottom: 20px;
+	}
+	.forms {
+		flex-direction: column;
+	}
+	.forms > div:nth-of-type(1) {
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 480px) {
+	.adaptiveRemove {
+		display: none;
+	}
+	.adaptiveVisible {
+		display: block;
+	}
+	.advantages__title {
+		margin-bottom: 18px;
+		font-size: 24px;
+	}
+
+	.advantages__desc {
+		font-size: 14px;
+	}
+	.advantages__img {
+		height: 70%;
+	}
+}

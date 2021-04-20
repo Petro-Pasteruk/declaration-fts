@@ -16,3 +16,33 @@ $(function() {
         $("#counter-seconds .counter").html(seconds);
     }, 1000);
 });
+
+window.addEventListener("resize", function () {
+    if (document.documentElement.clientWidth <= 860 && !document.querySelector(".timer").classList.contains("col-sm-8")) {
+        document.querySelector(".col-sm-5.timer").classList.remove("col-sm-5");
+        document.querySelector(".timer").classList.add("col-sm-8");
+
+        document.querySelectorAll(".forms > .col-sm-5").forEach(item => {
+            item.classList.remove("col-sm-5");
+            item.classList.add("col-sm-12");
+        });
+    }
+    if (document.documentElement.clientWidth <= 910 && !document.querySelector(".adaptive901").classList.contains("col-sm-9")) {
+        document.querySelector(".adaptive901").classList.remove("col-sm-5");
+        document.querySelector(".adaptive901").classList.add("col-sm-9");
+    }
+});
+
+if (document.documentElement.clientWidth <= 860 && !document.querySelector(".timer").classList.contains("col-sm-8")) {
+    document.querySelector(".col-sm-5.timer").classList.remove("col-sm-5");
+    document.querySelector(".timer").classList.add("col-sm-8");
+
+    document.querySelectorAll(".forms > .col-sm-5").forEach(item => {
+        item.classList.remove("col-sm-5");
+        item.classList.add("col-sm-12");
+    });
+}
+if (document.documentElement.clientWidth <= 910 && !document.querySelector(".adaptive901").classList.contains("col-sm-9")) {
+    document.querySelector(".adaptive901").classList.remove("col-sm-5");
+    document.querySelector(".adaptive901").classList.add("col-sm-9");
+}
